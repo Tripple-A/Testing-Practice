@@ -1,0 +1,23 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "Javascript testing practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tripple-A/Testing-Practice.git"
+  },
+  "author": "Biodun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tripple-A/Testing-Practice/issues"
+  },
+  "homepage": "https://github.com/Tripple-A/Testing-Practice#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0"
+  }
+}
