@@ -1,4 +1,4 @@
-import { 
+import {
   capitalize, reverse, Calculator, caesar, analyze,
 } from './tests';
 
