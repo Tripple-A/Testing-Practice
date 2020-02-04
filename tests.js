@@ -23,7 +23,7 @@ const caesar = (str, k) => {
 
   const check3 = (newcode) => String.fromCharCode(((newcode - 90) % 26) + 64);
 
-  for (let index=0; index < str.length; index++) {
+  for (let index = 0; index < str.length; index += 1) {
     const letter = str.charAt(index);
     const code = str.charCodeAt(index);
     const newcode = code + k;
@@ -36,6 +36,16 @@ const caesar = (str, k) => {
   }
   return str;
 };
+
+const analyze = (arr) => {
+  const average = () => arr.reduce((a, b) => a + b) / arr.length;
+  return {
+    average: average(arr),
+    min: Math.min(...arr),
+    max: Math.max(...arr),
+    length: arr.length,
+  };
+};
 export {
-  capitalize, reverse, Calculator, caesar,
+  capitalize, reverse, Calculator, caesar, analyze,
 };
