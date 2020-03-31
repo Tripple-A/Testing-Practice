@@ -5,6 +5,7 @@ This is an implementation of the testing some basic Javascript functions using J
 ## Table of Contents
 
 * [Built With](#built-with)
+* [Functions Tested](#functions-tested)
 * [Technologies Employed](#technologies-employed)
 * [Screen view](#screen-view)
 * [Required Installations](#required-installations)
@@ -19,9 +20,19 @@ This is an implementation of the testing some basic Javascript functions using J
 * Windows
 * Love and passion for code ❤️
 
+<!-- functions tested -->
+## Functions Tested
+* Capitalize: Capitalizes the first letter of a string
+* Reverse: Reverses an entire string
+* Calculator: Contains add,subtracr,multiply and divide operations.
+* Caesar: Takes a string and returns it's equivalent Caesar cipher
+* Analyze: Takes an array and returns an object with some array properties like length,min,max and average.
+
 <!-- TECHNOLOGIES EMPLOYED -->
 ## Technologies Employed
-* ES 6
+* Jest was used to create tests
+* Babel was used to enable import and export functions
+* Modules and factories are employed
 * Jest auto watch
 
 <!-- screen view -->
@@ -75,17 +86,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 * <a href="https://www.microverse.org/"> Microverse</a>  and <a href="https://www.theodinproject.com/"> Odin Project</a> .
 
-
-
-# Testing-Practice
-JavaScript Testing Practice
-## HighLights
-* Jest was used to create tests
-* Babel was used to enable import and export functions
-* Modules and factories are employed
-## Functions Tested
-* Capitalize: Capitalizes the first letter of a string
-* Reverse: Reverses an entire string
-* Calculator: Contains add,subtracr,multiply and divide operations.
-* Caesar: Takes a string and returns it's equivalent Caesar cipher
-* Analyze: Takes an array and returns an object with some array properties like length,min,max and average.
