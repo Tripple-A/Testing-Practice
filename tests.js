@@ -17,23 +17,23 @@ const Calculator = (() => {
 })();
 
 const caesar = (str, k) => {
-  const check1 = (newcode) => String.fromCharCode(((newcode - 122) % 26) + 96);
+  const letterEquivalent1 = (newcode) => String.fromCharCode(((newcode - 122) % 26) + 96);
 
-  const check2 = (newcode) => String.fromCharCode(newcode);
+  const letterEquivalent2 = (newcode) => String.fromCharCode(newcode);
 
-  const check3 = (newcode) => String.fromCharCode(((newcode - 90) % 26) + 64);
+  const letterEquivalent3 = (newcode) => String.fromCharCode(((newcode - 90) % 26) + 64);
 
   for (let index = 0; index < str.length; index += 1) {
     const letter = str.charAt(index);
     const code = str.charCodeAt(index);
     const newcode = code + k;
     if (code >= 97 && code <= 122) {
-      newcode > 122 ? str = str.replace(letter, check1(newcode))
-        : str = str.replace(letter, check2(newcode));
+      newcode > 122 ? str = str.replace(letter, letterEquivalent1(newcode))
+        : str = str.replace(letter, letterEquivalent2(newcode));
     }
     if (code >= 65 && code <= 90) {
-      newcode > 90 ? str = str.replace(letter, check3(newcode))
-        : str = str.replace(letter, check2(newcode));
+      newcode > 90 ? str = str.replace(letter, letterEquivalent3(newcode))
+        : str = str.replace(letter, letterEquivalent2(newcode));
     }
   }
   return str;
